@@ -1,9 +1,18 @@
-import Image from "next/image"
+import Image, { StaticImageData } from "next/image"
 import Estrelas from "../assets/estrelas.png"
 import Pagamentos from "../assets/pagamentos.png"
 import { BsFilePdf } from "react-icons/bs"
 
-const Product = ({image, title, preco, descricao}) => {
+type pProps = {
+  image: StaticImageData,
+  title: string,
+  preco: string,
+  descricao: string,
+}
+
+const Product = (props: pProps) => {
+
+  const {image, title, preco, descricao} = props
 
   return (
     <div className="cdc__salepage-product">
