@@ -1,0 +1,105 @@
+@import url(./index.css);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    * {
+        @apply m-0 p-0 box-border
+    }
+    body {
+        @apply bg-[var(--color-bg)] overflow-x-hidden
+    }
+    header {
+        @apply bg-[var(--color-footer)] justify-center w-screen drop-shadow-md z-50
+    }
+    a {
+        color: var(--color-text);
+        text-decoration: none;   
+    }
+}
+
+@layer components {
+    .padding {
+        @apply p-8
+    }
+    .margin {
+        @apply m-16
+    }
+    .cdc__header-menu_links {
+        @apply my-2
+    }
+    .cdc__header-links {
+        @apply mx-3 text-lg lg:text-2xl 
+    }
+    .cdc__salepage-product {
+        @apply rounded-md flex flex-col justify-center align-middle md:flex-row mb-9
+    }
+    .cdc__salepage-product_image {
+        @apply flex justify-center align-middle
+    }
+    .cdc__salepage-product_infos {
+        @apply flex flex-col justify-center align-middle text-center max-w-full md:text-start md:justify-start
+    }
+    .cdc__salepage-product_infos h3 {
+        @apply text-[var(--color-subtext)] flex justify-center md:justify-start md:text-xl
+    }
+    .cdc__salepage-product_infos h1 {
+        @apply text-gray-700 font-extrabold flex text-6xl justify-center md:justify-start
+    }
+    .cdc__salepage-product_stars {
+        @apply h-5 w-36
+    }
+    .cdc__salepage-product_infos p {
+        @apply  text-gray-700 font-normal flex justify-end text-start md:text-xl
+    }
+    .cdc__salepage-product_infos p:last-child {
+        @apply text-gray-700 font-normal flex justify-center text-center
+    }
+    .cdc__salepage-product_buybtn {
+        @apply bg-[var(--color-button)] flex text-center align-middle justify-center rounded-md px-5 py-3
+    }
+    .cdc__salepage-product_buybtn a {
+        @apply text-white font-semibold md:text-2xl
+    }
+    .cdc__salepage-product_pagamentos {
+        @apply w-48 md:w-56
+    }
+    
+
+    /*animacao*/
+    .scale-up-right {
+        -webkit-animation: scale-up-right 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+                animation: scale-up-right 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    }
+    @-webkit-keyframes scale-up-right {
+        0% {
+        -webkit-transform: scale(0.5);
+                transform: scale(0.5);
+        -webkit-transform-origin: 100% 50%;
+                transform-origin: 100% 50%;
+        }
+        100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        -webkit-transform-origin: 100% 50%;
+                transform-origin: 100% 50%;
+        }
+    }
+    @keyframes scale-up-right {
+        0% {
+        -webkit-transform: scale(0.5);
+                transform: scale(0.5);
+        -webkit-transform-origin: 100% 50%;
+                transform-origin: 100% 50%;
+        }
+        100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        -webkit-transform-origin: 100% 50%;
+                transform-origin: 100% 50%;
+        }
+    }
+  
+  
+}
