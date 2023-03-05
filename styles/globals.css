@@ -36,7 +36,7 @@
         @apply rounded-md flex flex-col justify-center align-middle md:flex-row mb-9
     }
     .cdc__salepage-product_image {
-        @apply flex justify-center align-middle
+        @apply flex justify-center align-middle mr-8
     }
     .cdc__salepage-product_infos {
         @apply flex flex-col justify-center align-middle text-center max-w-full md:text-start md:justify-start
@@ -63,7 +63,7 @@
         @apply text-white font-semibold md:text-2xl
     }
     .cdc__salepage-product_pagamentos {
-        @apply w-48 md:w-56
+        @apply w-56 md:w-64
     }
     
 
